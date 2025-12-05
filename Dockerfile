@@ -1,5 +1,4 @@
 FROM apache/superset:latest
-git push
 
 USER root
 

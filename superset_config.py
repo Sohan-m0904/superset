@@ -1,0 +1,21 @@
+import os
+
+SECRET_KEY = os.environ.get("SUPERSET_SECRET_KEY", "devkey-change-this")
+
+ENABLE_PROXY_FIX = True
+
+SIP_38_ENABLED = True
+
+FEATURE_FLAGS = {
+    "ENABLE_SETTINGS": True,
+    "ENABLE_REACT_CRUD_VIEWS": True,
+    "ENABLE_NEW_UI_COMPONENTS": True,
+    "ENABLE_DASHBOARD_NAVIGATION": True,
+
+    "DASHBOARD_NATIVE_FILTERS": True,
+    "DASHBOARD_CROSS_FILTERS": True,
+    "DASHBOARD_RBAC": True,
+
+    "THUMBNAILS": True,
+    "ENABLE_ADVANCED_DATA_TYPES": True,
+}
